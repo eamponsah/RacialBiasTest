@@ -3,7 +3,7 @@ Type: Package
 Title: Randomization Test for Racial Bias in Traffic Stops
 Version: 0.1.0
 Author: Edwin Amponsah
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: Edwin Amponsah <edwinamponsah@umass.edu>
 Description: Uses randomization test to determine whether there is any pattern of racial bias in traffic stops.
 License: 
 Encoding: UTF-8

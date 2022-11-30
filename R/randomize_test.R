@@ -74,7 +74,7 @@ randomize_test <- function(sim_data, group, non= FALSE, obs_stops){
 
   ###testing###
   nsim <- length(data_test)
-  sim_pvalue<- sum(data_test>obs_stops)/nsim
+  sim_pvalue<- sum(data_test>=obs_stops)/nsim
 
   #Output
   print("****************Output**************")

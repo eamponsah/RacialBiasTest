@@ -81,13 +81,16 @@ randomize_test <- function(sim_data, group, non= FALSE, obs_stops){
   print(ifelse(non==FALSE,paste0("Group: ",group),paste0("Group: ","Non-",group)))
   print("H_A: Rand_stop > observed_stop")
   print(paste0("simulated p-value=",sim_pvalue))
-  hist(data_test, breaks=30, col='grey', main=paste0("Randomized Distribution of Traffic Stops for ",
-                                                     ifelse(non==FALSE,paste0(group," Racial Group"),paste0("Non-",group, " Racial Group"))),
+  hist(data_test, breaks=30, col='grey',main="" ,
        las=1, xlab='', xlim = range(c(obs_stops,range(data_test))))
   abline(v=obs_stops, lwd=3, col="red")
   mtext(paste0("simulated p-value=",sim_pvalue), side=3)
 
 }
+#main=paste0("Randomized Distribution of Traffic Stops for ",
+#ifelse(non==FALSE,paste0(group," Racial Group"),paste0("Non-",group, " Racial Group")))
+
+
 
 #' Randomization Test for Racial Bias
 #'
